@@ -7,5 +7,22 @@
     other sylesheets into your bunde as well, e.j:
     
     import 'relative/path/to/stylesheet.scss';
-
+  
 */
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: auto;
+}
+
