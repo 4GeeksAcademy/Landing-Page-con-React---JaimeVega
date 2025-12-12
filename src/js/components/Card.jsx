@@ -1,19 +1,18 @@
-import React from "react";
-import rigoImage from "../../img/500x325.svg";
-
 const style = {
     width: '20rem',
     marginTop:'10px'
 }
-const Card = () => {
+const Card = (props) => {
     return (
-        <div >
-            <div className="card" style={style}>
-                <img src={rigoImage} className="card-img-top" alt="..."></img>
+        <div className="col d-flex justify-content-center">
+            <div className="card " style={style}>
+                <img src={props.image} className="card-img-top" alt="..."></img>
                 <div className="card-body text-center">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                    <a href="#" className="btn btn-primary">Find Out More!</a>
+                    <h5 className="card-title">{props.title}</h5>
+                    <p className="card-text">{props.description}</p>
+                </div>
+                <div className="d-flex justify-content-center py-2 border-top " >
+                    <a href="#" className="btn btn-primary">{props.buttonName}</a>
                 </div>
             </div>
         </div>
